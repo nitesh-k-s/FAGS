@@ -1,0 +1,527 @@
+@keyframes buthov {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes butnhov {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes butend {
+    0% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes butbeg {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.75;
+    }
+}
+
+@keyframes butend2 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes butbeg2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes sll {
+    0% {
+        left: 50%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes slr {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
+
+@keyframes sa {
+    0% {
+        box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+
+@keyframes sb {
+    0% {
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    100% {
+        box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0);
+    }
+}
+
+@font-face {
+    font-family: 'Roboto Black';
+    src: url('./Fonts/Roboto-Black.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('./Fonts/Roboto-Light.ttf')format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./Pictures/ibackdrop.jpg");
+    background-attachment: fixed;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    opacity: 0.5;
+    border-radius: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    width: 2px;
+}
+
+.button {
+    border: none;
+    outline: none;
+    background-color: rgba(104, 141, 110, 0);
+}
+
+#das {
+    position: fixed;
+    bottom: 50px;
+    right: 50%;
+    transform: translate(50%, 50%);
+    z-index: 1000;
+}
+
+#tas {
+    position: fixed;
+    top: 50px;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1000;
+}
+
+.invisible {
+    opacity: 0;
+    animation: butend 0.2s 1;
+}
+
+.visible {
+    opacity: 0.75;
+    animation: butbeg 0.2s 1;
+}
+
+.visib {
+    opacity: 1;
+    animation: butbeg2 0.2s 1;
+}
+
+.invisib {
+    opacity: 0;
+    animation: butend2 0.2s 1;
+}
+
+#sdb,
+#stb,
+#swc,
+#arro {
+    opacity: 0.5;
+    animation: butnhov 0.5s 1;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+#sdb:hover,
+#stb:hover,
+#swc:hover,
+#arro:hover {
+    animation: buthov 0.5s 1;
+    opacity: 1;
+}
+
+#da,
+#ta {
+    width: 50px;
+}
+
+#ta1 {
+    width: 30px;
+}
+
+#swc {
+    cursor: pointer;
+    margin: 10px;
+    float: right;
+}
+
+#initscr {
+    display: table;
+    width: 100%;
+    height: 99.9%;
+    text-align: center;
+}
+
+#tabc {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#ibd {
+    width: 50%;
+}
+
+.shop {
+    position: absolute;
+    background-color: rgb(255, 0, 48);
+    width: 100%;
+    left: 50%;
+    height: 100%;
+    display: table;
+    animation: slr 1s 1;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+#arr {
+    position: absolute;
+    bottom: 5%;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    margin-left: 3.8%;
+    ;
+}
+
+.arrr {
+    transform: rotate(180deg);
+}
+
+.shoppe {
+    width: 100%;
+    position: absolute;
+    background-color: rgb(255, 0, 48);
+    left: 0%;
+    height: 100%;
+    display: table;
+    animation: sll 1s 1;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+#main {
+    width: 50%;
+}
+
+#sho {
+    z-index: 100;
+    width: 100%;
+}
+
+.toptobottom {
+    position: absolute;
+    top: 50%;
+    left: 3.5%;
+    width: 2.7%;
+    float: left;
+    font-family: 'Roboto Light';
+    font-size: 360%;
+    color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%);
+}
+
+table {
+    position: absolute;
+    left: 9.7%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90.3%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: block;
+    height: 100%;
+}
+
+table td {
+    padding: 0.5%;
+}
+
+table img {
+    display: inline-block;
+    width: 280px;
+}
+
+.cshadow {
+    animation: sb 0.5s 1;
+    cursor: pointer;
+}
+
+td button {
+    margin: 0.5%;
+}
+
+.cshadow:hover {
+    animation: sa 0.5s 1;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+#bored {
+    background-color: rgb(247, 247, 247);
+    height: 100%;
+    padding-left: 5.73%;
+    padding-top: 7.1%;
+    padding-right: 4.17%;
+    color: rgb(55, 55, 55);
+    font-size: 250%;
+    font-family: 'Roboto Light';
+}
+
+#bored h1 {
+    font-size: 225%;
+    font-family: 'Roboto Black';
+}
+
+#last {
+    box-sizing: border-box;
+    background-color: rgb(54, 54, 54);
+    color: rgb(247, 247, 247);
+    padding: 2.6%;
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+#last p {
+    font-family: "Roboto Light";
+    font-size: 200%;
+}
+
+#conu {
+    font-size: 500%;
+    font-family: 'Roboto Black';
+}
+
+#desb {
+    vertical-align: middle;
+    display: table-cell;
+    vertical-align: bottom;
+    width: 25%;
+}
+
+#vfl {
+    width: 100%;
+}
+
+#dlgbox {
+    background: linear-gradient(to left, #f7f7f7 50.1%, #ff0030 49.9%);
+    display: none;
+    position: fixed;
+    width: 75%;
+    height: 75%;
+    z-index: 9999;
+}
+
+#dlg-body {
+    word-wrap: break-word;
+    width: 50%;
+    color: rgb(55, 55, 55);
+    font-size: 250%;
+    font-family: 'Roboto Light';
+    float: left;
+}
+
+#pic img {
+    height: 70%;
+}
+
+#pic {
+    margin-top: 7.25%;
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+
+#frm {
+    margin: 15.3% 20% 15.3% 20%;
+}
+
+input[type=text],
+select,
+input::placeholder {
+    width: 100%;
+    margin: 3%;
+    padding: 1.7% 0.8% 1.7% 0.8%;
+    display: inline-block;
+    border: 0px;
+    border-radius: 0px;
+    font-size: 2.6vh;
+    font-family: "Roboto Light";
+    color: rgb(142, 142, 142);
+    background-color: rgb(220, 220, 220);
+    font-weight: 900;
+    border: 2px solid rgb(220, 220, 220);
+}
+
+input:focus,
+select:focus {
+    border: 2px solid rgb(255, 0, 48);
+}
+
+input[type=submit] {
+    margin-top: 3%;
+    float: right;
+    width: 35%;
+    border-radius: 20px;
+    height: 6%;
+    background-color: rgb(156, 223, 144);
+    color: rgb(206, 251, 198);
+    font-family: "Roboto Light";
+    font-size: 3vh;
+    font-weight: 900;
+    border: none;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(97, 200, 80);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#yd {
+    margin-bottom: 4.8%;
+    display: inline-block;
+    font-size: 4.8vh;
+    font-family: "Roboto Black";
+    color: rgb(255, 0, 48);
+}
+
+.szr {
+    display: inline-block;
+    margin-left: 2.9%;
+    margin-right: 6.5%;
+    margin-top: 3%;
+}
+
+.szrr {
+    display: inline-block;
+    margin-right: 0%;
+    margin-top: 2%;
+}
+
+.rim {
+    width: 35px;
+    filter: brightness(0.8);
+}
+
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+[type=radio]+img {
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+[type=radio]:hover+img {
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+[type=radio]:checked+img {
+    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 rgb(255, 0, 48));
+    filter: opacity(0.5) drop-shadow(0 0 0 rgb(255, 0, 48));
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+select {
+    background-image:url(./Pictures/dda.png);
+    background-position: 98%;
+    background-size: 4%;
+    background-repeat: no-repeat;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+option:disabled{
+    display: none;
+}

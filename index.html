@@ -1,0 +1,188 @@
+<html>
+
+<head>
+    <link rel="shortcut icon" href="Pictures/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="author" content="Vector 5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAGS</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="./shortcut.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+
+<body onload="dis()" onscroll="dis()" onresize='rsz()'>
+    <div id="dlgbox">
+        <div id="pic">
+            <img id="pp" src="">
+        </div>
+        <div id="dlg-body">
+            <button id="swc" onclick="hideDiag()" class="button">
+                <img id="ta1" src="./Pictures/Untitled-1.png">
+            </button>
+            <div id="frm">
+                <form method="POST">
+                    <label id="yd">Your Details</label><br>
+                    <input type="text" name="name" placeholder="Name">
+                    <br>
+                    <input type="text" name="regno" placeholder="Registration Number">
+                    <br>
+                    <select id="hstl" name="hostel">
+                        <option value="" disabled selected>Hostel</option>
+                        <option value="SVBH">SVBH</option>
+                        <option value="Tilak">Tilak</option>
+                        <option value="Tagore">Tagore</option>
+                        <option value="Raman">Raman</option>
+                        <option value="Malviya">Malviya</option>
+                        <option value="Patel">Patel</option>
+                        <option value="Tandon">Tandon</option>
+                        <option value="KNGH">KNGH</option>
+                    </select>
+                    <br>
+                    <input type="text" name="name" placeholder="Room">
+                    <br>
+                    <input type="text" name="Phone" placeholder="Phone Number">
+                    <br>
+                    <label class="szr">
+                        <input type="radio" name="Size" id="XS" value="XS">
+                        <img class="rim" src="./Pictures/xs.png">
+                    </label>
+                    <label class="szr">
+                        <input type="radio" name="Size" id="S" value="S">
+                        <img class="rim" src="./Pictures/s.png">
+                    </label>
+                    <label class="szr">
+                        <input type="radio" name="Size" id="M" value="M">
+                        <img class="rim" src="./Pictures/m.png">
+                    </label>
+                    <label class="szr">
+                        <input type="radio" name="Size" id="L" value="L">
+                        <img class="rim" src="./Pictures/l.png">
+                    </label>
+                    <label class="szrr">
+                        <input type="radio" name="Size" id="XL" value="XL">
+                        <img class="rim" src="./Pictures/xl.png">
+                    </label>
+                    <br>
+                    <input type="submit" value="Continue" onclick="hideDiag()">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="initscr">
+        <div id="tabc">
+            <img id="ibd" src="./Pictures/ibackdrop.png">
+        </div>
+    </div>
+    <div id="das">
+        <button id="sdb" class="button" onclick="scrollWinD()">
+            <img id="da" src="./Pictures/darr.png">
+        </button>
+    </div>
+    <div id="tas">
+        <button id="stb" class="button" onclick="scrollWinT()">
+            <img id="ta" src="./Pictures/tarr.png">
+        </button>
+        <span id="a"></span>
+    </div>
+    <div id="sho" class="shop">
+        <span id="arr">
+            <button id="arro" class="button" onclick="visshop()">
+                <img src="./Pictures/arr.png">
+            </button>
+        </span>
+        <div class="toptobottom">
+            S
+            <br>H
+            <br>O
+            <br>P
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <button onclick="showDialog(this)" class="button cshadow">
+                        <img src="./Pictures/shirts/CE.png">
+                    </button>
+                </td>
+                <td>
+                    <button onclick="showDialog(this)" class="button cshadow">
+                        <img src="./Pictures/shirts/DLLB.png">
+                    </button>
+                </td>
+                <td>
+                    <button onclick="showDialog(this)" class="button cshadow">
+                        <img src="./Pictures/shirts/DLLC.png">
+                    </button>
+                </td>
+                <td>
+                    <button onclick="showDialog(this)" class="button cshadow">
+                        <img src="./Pictures/shirts/DLLP.png">
+                    </button>
+                </td>
+                <td>
+                    <button onclick="showDialog(this)" class="button cshadow">
+                        <img src="./Pictures/shirts/LLB.png">
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="showDialog(this)" class="button cshadow">
+                        <img src="./Pictures/shirts/LLC.png">
+                    </button>
+                </td>
+                <td>
+                    <button onclick="showDialog(this)" class="button cshadow">
+                        <img src="./Pictures/shirts/LLP.png">
+                    </button>
+                </td>
+                <td>
+                    <button onclick="showDialog(this)" class="button cshadow">
+                        <img src="./Pictures/shirts/PB.png">
+                    </button>
+                </td>
+                <td>
+                    <button onclick="showDialog(this)" class="button cshadow">
+                        <img src="./Pictures/shirts/PC.png">
+                    </button>
+                </td>
+                <td>
+                    <button onclick="showDialog(this)" class="button cshadow">
+                        <img src="./Pictures/shirts/PP.png">
+                    </button>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div id="main" class="wrapper mid">
+        <div id="bored">
+            <h1>BORED?</h1>
+            <br>
+            <p>Buy a shirt! With some of the best cotton raised and hand-picked in from cotton farms in India, you’ll
+                be ready for this Summer, armed with tshirts at 180 gsm. Light, versatile, trendy. </p>
+        </div>
+    </div>
+
+    <div class="wrapper" id="last">
+        <h1 id="conu">CONTACT US</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>&nbspPhone: +91-9711388120 </p>
+        <br>
+        <br>
+        <p>&nbspEmail: vectorfive@gmail.com</p>
+        <div id="desb">
+            <p>Designs and Website By</p>
+            <br>
+            <br>
+            <a href="https://www.facebook.com/thevectorfive" target="_blank">
+                <img id="vfl" src="./Pictures/V5logo.png">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
